@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">AgeInMinutesApp</string>
+    <string name="app_name">AGE IN MINUTES CALCULATOR</string>
     <string name="calculate_your_age">CALCULATE YOUR AGE</string>
     <string name="calculate_your_age_in_minutes">CALCULATE YOUR AGE IN MINUTES</string>
+    <string name="select_your_date_of_birth">SELECT YOUR DATE OF BIRTH</string>
+    <string name="your_age_in_minutes">YOUR AGE IN MINUTES</string>
+    <string name="your_date">YOUR DATE</string>
 </resources>
