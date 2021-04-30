@@ -75,5 +75,5 @@ Not only to minutes.
 Project is: _in progress_
 
 ## Inspiration
-My ispiration to create such a app was a willings to learn how to use Android Studio environment and Koltin language.
-It was my first steps so please for your understanding. 
+My inspiration to create such an app was a willings to learn how to use Android Studio environment and Koltin language.
+It was my first steps so I appreciate your understanding in the matter. 
