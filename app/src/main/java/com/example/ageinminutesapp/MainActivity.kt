@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    //funkcja pokazująca kalendarz i dająca możliwość wybrania daty
+
+    //function showing the calendar and giving the possibility to choose date
     fun dataPicker(view: View){
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
                     val date = simpleDateFormat.parse(selectedDate)
-                   //!! bo date może być null więc wymuszamy
+                   //!! date can be 'null' so we have to use 'force' : '!!'
                     val dateInMinutes = date!!.time / 60000
 
                     val currDate = simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis()))
@@ -47,10 +48,6 @@ class MainActivity : AppCompatActivity() {
                     ageInMinuteText.setText("${currDateInMinutes-dateInMinutes}")
                 }
         , year, month, day).show()
-    }
-
-    fun calculateAge(day: MonthDay, month: Month, year: Year ){
-
     }
 
 }
