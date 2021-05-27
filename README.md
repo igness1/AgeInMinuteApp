@@ -33,7 +33,7 @@ If environment is ready, then open the project in Android Studio and click "Run 
 ## Code Examples
 Main function responsible for data picking and transfering age to minutes:
 ```Kotlin
-fun dataPicker(view: View){
+fun dataPicker(){
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
         val month = calendar.get(Calendar.MONTH)
