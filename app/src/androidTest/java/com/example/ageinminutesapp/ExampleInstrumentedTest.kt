@@ -35,7 +35,8 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.ageinminutesapp", appContext.packageName)
     }
-
+    // test to check
+    
     // hand-made test
     @Test
     fun MainActivityTest(){
