@@ -1,5 +1,8 @@
 package com.example.ageinminutesapp
 
+import android.app.DatePickerDialog
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -9,9 +12,9 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
+class UnitTests{
+
+    val context = ApplicationProvider.getApplicationContext<Context>()
+
+
 }

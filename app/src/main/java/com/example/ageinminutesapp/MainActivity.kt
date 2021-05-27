@@ -3,13 +3,8 @@ package com.example.ageinminutesapp
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
-import java.time.Month
-import java.time.MonthDay
-import java.time.Year
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,20 +12,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // ukazywanie kalendarza by wybrać datę.
-        selectDateButton.setOnClickListener { view -> dataPicker(view) }
+        selectDateButton.setOnClickListener { view -> dataPicker() }
 
     }
 
 
     //function showing the calendar and giving the possibility to choose date
-    fun dataPicker(view: View){
+    fun dataPicker() {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
         DatePickerDialog(this,
-                DatePickerDialog.OnDateSetListener { view, year, month, day ->
+                DatePickerDialog.OnDateSetListener {view, year, month, day ->
 
                     val selectedDate = "$day/${month+1}/$year"
 
