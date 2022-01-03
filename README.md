@@ -31,7 +31,7 @@ the next step is to create Android Virtual Device in Android Virtual Device Mana
 If environment is ready, then open the project in Android Studio and click "Run 'app'". 
 
 ## Code Examples
-Main function responsible for data picking and transfering age to minutes:
+Main function responsible for data picking and transfering age into minutes:
 ```Kotlin
 fun dataPicker(){
         val calendar = Calendar.getInstance()
